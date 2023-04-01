@@ -12,17 +12,18 @@ peso1 = n4 *1
 
 media = (peso2+peso1+peso3+peso4)/10
 
+
 if media >= 7.0:
     print("Media: {:.1f}".format(media))
     resu=print("Aluno aprovado.")
-elif media <= 5.0:
+if media <= 5.0:
     print("Media: {:.1f}".format(media))
     resu=print("Aluno reprovado.")
     
 else :
     if media or 5.0 or 6.9:
         resu=("Aluno em exame.")
-    if media or 5.0 or 6.9:
+    
         novanota=float(input())
         novamedia= (novanota+media)/2
     if novamedia >= 5.0:
