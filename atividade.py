@@ -1,24 +1,31 @@
 from datetime import date
+#coloquei só para entrar no while
 nome =''
-idade = 0
+
+#enquanto o nome ou a idade for diferente de 0 mostre o nome e a idade 
 while nome != "zero" and nome != "0":
+        #como nome tem um elemento vago ele entra direto no while
+        
         nome =input("nome: ")
         if nome == "zero" or nome == "0":
+                print("fim")
                 break     
+        
         dataDenascimento = input("data de nascimento: ")
         dia, mes, ano = dataDenascimento.split('/')
-       
+        ano = int(ano)
+        dia = int(dia)
+        mes= int(mes)
         
-        data_atual = date.today()
-        data_nascimento= int(input("Ano de nascimento:"))
-        data_atual= data_atual.year
-        idade =data_atual-data_nascimento
+        def  calc(nasc):
+              diadoano= 365.2425
+              idade1 = int((date.today()-nasc).days /diadoano)
+              return idade1
+        
+     
 
-
-        if idade == 0:
-            break
-        else:
-            print("-"*30)
-            print(f"seu nome é {nome}, sua idade é {idade} logo sua data se nacimento é {dia}/{mes}/{ano}")
-            print("-"*30)
-
+        
+        
+        print("-"*30)
+        print(f"seu nome é {nome}, sua idade é ",calc(date(ano,mes,dia)) ,"logo sua data se nacimento é  ",dataDenascimento)
+        print("-"*30)
