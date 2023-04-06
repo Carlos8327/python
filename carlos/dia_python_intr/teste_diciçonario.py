@@ -1,0 +1,9 @@
+dia_do_aniversario=30
+aniversario={}
+aniversario["dia"]=dia_do_aniversario
+print(aniversario)
+aniversario={
+    "dia":3,
+    "mes":0,
+    "ano":0
+}
