@@ -1,0 +1,37 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro contador = 0
+		real numero,soma,media
+		cadeia A,B,C,D,reprovado,recuperacao,aprovado
+		soma = 0.0
+		contador = 0 
+		enquanto(contador<4){
+			escreva("Digite a notas : ")
+		leia(numero)
+		soma=soma +numero
+		contador = contador +1
+			
+		 	}
+		 	media = soma /contador
+		 	escreva("media = " + media)
+		 	se (media >= 8 e media<=10){
+		 		escreva("\nVocê esta de parabéns continue assim,você será um Eisten da vida  ")
+		 		}
+		 	se (media >= 7 e media<8){
+		 		
+		 		escreva("\nVocê esta de parabéns continue assim,quase lá    ")
+		 		}
+		 	se (media >= 6 e media<7){
+		 		escreva("\nVocê esta de parabéns continue assim ,mas poderia ser melhor  ")
+		 		}	
+		 	se (media >= 4 e media<6){
+		 		escreva("\nVocê esta de parabéns continue assim você não conseguira passar de ano   ")
+		 		}
+		 	senao se (media >= 0 e media<4){
+		 		escreva("\nVocê esta reprovado conto com você no ano que vem !  ")
+		 		}	
+	}	
+}
